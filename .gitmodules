@@ -1,0 +1,12 @@
+[submodule "DVD"]
+	path = DVD
+	url = https://github.com/DiriectorDoc/DVD
+[submodule "Simon"]
+	path = Simon
+	url = https://github.com/DiriectorDoc/Simon
+[submodule "All-Purpose-Counter"]
+	path = All-Purpose-Counter
+	url = https://github.com/DiriectorDoc/All-Purpose-Counter
+[submodule "Checklist-Maker"]
+	path = Checklist-Maker
+	url = https://github.com/DiriectorDoc/Checklist-Maker
