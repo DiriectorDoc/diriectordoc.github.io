@@ -8,3 +8,4 @@
 	url = https://github.com/DiriectorDoc/Checklist-Maker
 	fetch = +refs/*:refs/*
 	mirror = true
+	pushurl = https://github.com/DiriectorDoc/diriectordoc.github.io/checklist-maker

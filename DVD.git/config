@@ -5,6 +5,7 @@
 	symlinks = false
 	ignorecase = true
 [remote "origin"]
-	url = https://github.com/DiriectorDoc/DVD.git
+	url = https://github.com/DiriectorDoc/DVD
 	fetch = +refs/*:refs/*
 	mirror = true
+	pushurl = https://github.com/DiriectorDoc/diriectordoc.github.io/dvd
