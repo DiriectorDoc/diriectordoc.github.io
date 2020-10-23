@@ -1,0 +1,4 @@
+# pack-refs with: peeled fully-peeled sorted 
+4864895c31db240fc9efca9f6201aff8844a9c9e refs/heads/master
+db62ab388331b7c2e6d7b656c73cf5379947be39 refs/pull/1/head
+d589eb6257c0cb8caa77e3846073b7fdb8faf60f refs/tags/v0.0-Verbatim
