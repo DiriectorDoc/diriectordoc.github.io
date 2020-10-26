@@ -1,0 +1,9 @@
+body {
+	background: black;
+}
+.container {
+	background: white;
+	width: 66%;
+	margin: auto;
+	min-height: 100%;
+}
