@@ -7,3 +7,20 @@ body {
 	margin: auto;
 	min-height: 100%;
 }
+.caption {
+	float: right;
+	width: 50%;
+}
+.preview {
+	width: 50%;
+	float: left;
+}
+.preview img {
+	max-height: 200px;
+	max-width: 100%;
+}
+.list-element {
+	height: 200px;
+	display: inline-block;
+	width: 100%;
+}
