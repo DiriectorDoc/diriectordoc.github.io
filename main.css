@@ -1,27 +1,47 @@
 body {
 	background: black;
-}
-.container {
-	background: white;
-	width: 66%;
-	margin: auto;
-	min-height: 100%;
+	margin: 8px 0;
 }
 .caption {
+	text-align: right;
 	float: right;
 	width: 50%;
 }
+.container div {
+	font-size: 1rem;
+}
+.container {
+	background: white;
+	width: 1080px;
+	max-width: 100%;
+	margin: auto;
+	min-height: 100%;
+	font-size: 0;
+}
+.list-element {
+	height: 125px;
+	display: inline-block;
+	width:100%
+}
+.preview img {
+	max-height: 125px;
+	max-width: 100%;
+}
 .preview {
-	width: 50%;
 	float: left;
 	text-align: center;
 }
-.preview img {
-	max-height: 150px;
-	max-width: 100%;
+#content {
+	width: calc(100% - 256px);
+	display:inline-block;
+}#header {
+	height: 160px;
 }
-.list-element {
-	height: 150px;
-	display: inline-block;
-	width: 100%;
+#nav {
+	height: 37px;
+}
+#sidebar {
+	width: 256px;
+	display:inline-block;
+	vertical-align: top;
 }
