@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>F - Diriector_Doc</title>
+		<link href="global.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/png" href="icon/icon-404.png">
+		<script type="text/javascript" src="global.js"></script>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function(){
+				if(document.documentMode){
+					document.getElementsByClassName("container")[0].innerHTML = "Why are you using Internet Explorer anyway? Get a better browser."
+				} else {
+					let links = [
+							["https://media.giphy.com/media/hStvd5LiWCFzYNyxR4/giphy.gif", "https://giphy.com/gifs/hyperxgaming-hyperx-family-gaming-hStvd5LiWCFzYNyxR4", 480, 270],
+							["https://media.giphy.com/media/xTiQylEqfhsP1MQHug/giphy-downsized-large.gif", "https://giphy.com/gifs/typography-f-shurly-xTiQylEqfhsP1MQHug", 480, 480],
+							["https://media.giphy.com/media/l0Ex15F9pc1LNeGT6/giphy.gif", "https://giphy.com/gifs/studiosoriginals-alphabet-gilphabet-l0Ex15F9pc1LNeGT6", 480, 320],
+							["https://media.giphy.com/media/LXpmVImP06400/giphy.gif", "https://giphy.com/gifs/press-your-luck-LXpmVImP06400", 480, 335],
+							["https://media.giphy.com/media/iDmsJ46fwmfBV65bCq/giphy.gif", "https://giphy.com/gifs/looping-infinite-loop-cmdrkitten-iDmsJ46fwmfBV65bCq", 480, 269],
+							["https://media.giphy.com/media/l4FGI4Aaj5rmfbz1u/giphy.gif", "https://giphy.com/gifs/saladforpresident-l4FGI4Aaj5rmfbz1u", 480, 320],
+							["https://media.giphy.com/media/fV5VRZD5X6cZOYrbvc/giphy.gif", "https://giphy.com/gifs/design-rainbow-f-fV5VRZD5X6cZOYrbvc", 480, 480],
+							["https://media.giphy.com/media/45awgoFe1LtPq/giphy.gif", "https://giphy.com/gifs/animography-animated-typography-f-45awgoFe1LtPq", 400, 480],
+							["https://media.giphy.com/media/26AHJ7Nl2w9zEjUGI/giphy-downsized-large.gif", "https://giphy.com/gifs/26AHJ7Nl2w9zEjUGI", 480, 480],
+							["https://media.giphy.com/media/l0NhXTM0noQ12gkxO/giphy.gif", "https://giphy.com/gifs/party-type-letter-l0NhXTM0noQ12gkxO", 480, 480],
+							["https://media.giphy.com/media/jrj0Jh3CDEH3Kzyxwk/giphy.gif", "https://giphy.com/gifs/Winsults-f-winsults-jrj0Jh3CDEH3Kzyxwk", 380, 480],
+							["https://media.giphy.com/media/MY6MpD4YDuigatKNGh/giphy.gif", "https://giphy.com/gifs/f-regutv-MY6MpD4YDuigatKNGh", 480, 480],
+							["https://media.giphy.com/media/YqX6djXt5w1ZpcE4Jv/giphy.gif", "https://giphy.com/gifs/typography-f-animated-type-YqX6djXt5w1ZpcE4Jv", 480, 480],
+							["https://media.giphy.com/media/xTiQylaI9uP4pTcA00/giphy.gif", "https://giphy.com/gifs/animation-type-f-xTiQylaI9uP4pTcA00", 480, 480],
+							["https://media.giphy.com/media/RKBMT0bnD5H9Pghos7/giphy.gif", "https://giphy.com/gifs/f-typo-letterf-RKBMT0bnD5H9Pghos7", 480, 480],
+							["https://media.giphy.com/media/xT77Y9IW4ifCbRbNUk/giphy.gif", "https://giphy.com/gifs/typography-f-growths-xT77Y9IW4ifCbRbNUk", 480, 480],
+							["https://media.giphy.com/media/WsM1irWs6utEGHWtk2/giphy.gif", "https://giphy.com/gifs/efe-efemkt-zazitt-WsM1irWs6utEGHWtk2", 480, 480],
+							["https://media.giphy.com/media/cFLLnExjELn7a/giphy.gif", "https://giphy.com/gifs/spongebob-squarepants-f-cFLLnExjELn7a", 480, 330],
+							["https://media.giphy.com/media/l3fzM2wgd6TygHbYA/giphy.gif", "https://giphy.com/gifs/pink-perfect-pnk-l3fzM2wgd6TygHbYA", 480, 266],
+							["https://media.giphy.com/media/3orif1xSQnwOkYIRjO/giphy.gif", "https://giphy.com/gifs/season-4-the-simpsons-4x1-3orif1xSQnwOkYIRjO", 480, 362],
+							["https://media.giphy.com/media/3oEduKAngEl2kS6Reo/giphy.gif", "https://giphy.com/gifs/animation-flash-fast-3oEduKAngEl2kS6Reo", 480, 360],
+							["https://media.giphy.com/media/Su6AfX1jcw0Pg2Tzoz/giphy.gif", "https://giphy.com/gifs/design-loop-liquid-Su6AfX1jcw0Pg2Tzoz", 480, 480],
+						],
+						img = document.getElementsByTagName("img")[0],
+						first = links.shift();
+					links.push(first)
+					while (links[0][0] != first[0])
+						links.splice(links.length*Math.random()|0, 0, links.shift());
+					links.splice(links.length*Math.random()|0, 0, links.shift())
+			
+					let image = links.pop();
+			
+					img.setAttribute("src", image[0])
+					img.setAttribute("width", image[2])
+					img.setAttribute("height", image[3])
+			
+					document.getElementById("giphy").setAttribute("href", image[1])
+				}
+			});
+		</script>
+		<style>
+			img {
+				display: block;
+				margin: auto;
+			}
+
+			p,h1 {
+				text-align: center;
+			}
+
+			#giphy {
+				color: #999;
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<a class="github" href="https://github.com/DiriectorDoc/diriectordoc.github.io"></a>
+		<h1>This page does not exists</h1>
+		<div class="container">
+			<img/>
+			<p><a id="giphy">via GIPHY</a><br /><br />Check the URL or head to the <a href="https://diriectordoc.github.io">Home Page</a>.</p>
+		</div>
+	</body>
+</html>
