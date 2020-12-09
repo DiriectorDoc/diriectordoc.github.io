@@ -13,6 +13,7 @@
 					if(!blacklist.some(elem => elem == e.id))
 						$("#sidebar ul").append(`<li><a href="${e.html_url}">${e.name.replaceAll("-", " ")}</a></li>`)
 				}
+				$("#sidebar h4").html("Repositories")
 			})
 		</script>
 	</head>
@@ -22,7 +23,7 @@
 				Sample
 			</div>
 			<div id="sidebar">
-				<h4>All Projects</h4>
+				<h4>Loading...</h4>
 				<ul />
 			</div>
 			<div id="content">
