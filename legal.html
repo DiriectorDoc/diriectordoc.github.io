@@ -10,5 +10,5 @@
 			fetch("legal.txt").then(e=>e.text()).then(e=>document.getElementById("body").innerHTML=`<a id="download" style="display:none" href="legal.txt" download></a>${e}`),document.addEventListener("keydown",function(e){if(83==((e=e||window.event).keyCode||e.which)&&e.ctrlKey&&!e.shiftKey&&!e.altKey&&!e.metaKey)return document.getElementById("download").click(),e.cancelBubble=!0,e.returnValue=!1,e.stopPropagation&&(e.stopPropagation(),e.preventDefault()),!1},!1);
 		</script>
 	</head>
-	<body style="word-wrap:break-word;white-space:pre-wrap;font-family:monospace;margin:1em 8px" id="body"></body>
+	<body style="word-wrap:break-word;white-space:pre-wrap;font-family:monospace;margin:1em 8px;-moz-control-character-visibility:visible" id="body"></body>
 </html>
