@@ -21,7 +21,7 @@ body {
 	background: #eee;
 }
 .list-element {
-	margin: 1em;
+	margin: .5em 1em;
 	height: 125px;
 	display: inline-block;
 	width: calc(100% - 3.414213562373em - 2px);
@@ -42,26 +42,33 @@ body {
 }
 .preview {
 	float: left;
-	width:50%;
+	width: 50%;
 	text-align: center;
 }
 #content {
-	width: calc(100% - 256px - 3.2360679774998em);
+	width: calc(76.393202250021% - 3.2360679774998em);
 	display: inline-block;
 	padding: 1.6180339887499em;
 }
 #header {
-	height: 160px;
+	height: 157.569876450341px;
 }
 #list {
 	border: 1px solid grey;
+	padding: .5em 0;
 }
 #nav {
-	height: 37px;
+	height: 37.1972020485237px;
+}
+#sidebar ul {
+	word-wrap: break-word;
 }
 #sidebar {
-	width: calc(256px - 2em);
+	width: calc(23.606797749979% - 2em);
+	border: 1px solid grey;
 	display:inline-block;
 	vertical-align: top;
-	padding: 1em;
+	margin: calc(1em - 2px);
+	margin-right: 0;
+	padding: 0 .5em;
 }

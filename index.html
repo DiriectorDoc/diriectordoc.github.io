@@ -16,8 +16,10 @@
 				$(".list-element:odd").addClass("odd")
 				let blacklist = [271170024, 267769036]
 				for(let e of await $.getJSON("https://api.github.com/users/diriectordoc/repos")){
-					if(!blacklist.some(elem => elem == e.id))
-						$("#sidebar ul").append(`<li><a href="${e.html_url}">${e.name.replaceAll("-", " ")}</a></li>`)
+					if(!blacklist.some(elem => elem == e.id)){
+						let name = e.name.replaceAll("-", " ");
+						$("#sidebar ul").append(`<li><a href="${e.html_url}" title="${name}">${name}</a></li>`)
+					}
 				}
 				$("#sidebar h4").html("Repositories")
 				$(".footer img").attr("src", "by-sa.png")
