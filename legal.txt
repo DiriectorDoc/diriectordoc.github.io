@@ -2,15 +2,25 @@ diriectordoc.github.io
 ----------------------
 
  ~~ Image usage ~~ 
-All images that display on this website are available under Creative Commons licence version 4.0 unless otherwise specified. All images displayed on this website are owned by me, except for the SVG of the GitHub logo (OCTOCAT®) and by.png, located at the bottom of the page.
+All images that display on this website are available under Creative Commons licence version 4.0 unless otherwise specified. All images displayed on this website are owned by me, except for the SVG of the GitHub Mark and by-sa.png.
 
-~OCTOCAT®~
+~Github Mark~
 As stated on github.com/logos:
-"The OCTOCAT design is the exclusive property of GitHub, Inc and has been federally registered with the United States Copyright Office. All rights reserved.
-No adaptation or use of any kind of any of our registered trademarks or copyrights, or any other contents of this website, is allowed without the express written permission of GitHub, Inc."
 
-~by.png~
-by.png is considered Public Domain for numerous reasons:
-  1.	It consists entirely of information that is common property and contains no original authorship.
-  2.	It consists only of simple geometric shapes or text and does not meet the threshold of originality needed for copyright protection.
+    The OCTOCAT design is the exclusive property of GitHub, Inc and has been federally registered with the United States Copyright Office. All rights reserved.
+    No adaptation or use of any kind of any of our registered trademarks or copyrights, or any other contents of this website, is allowed without the express written permission of GitHub, Inc.
+
+Github has allowed its users to:
+
+    ✓ Use the Mark in social buttons to link to your GitHub profile or project
+
+For other permissions, see https://github.com/logos
+
+~by-sa.png~
+by-sa.png is considered Public Domain for numerous reasons:
+  1.    It consists entirely of information that is common property and contains no original authorship.
+  2.    It consists only of simple geometric shapes or text and does not meet the threshold of originality needed for copyright protection.
 Although it is free of copyright restrictions, this image may still be subject to other restrictions.
+
+~Wikipedia Mug~
+This images of a modified version of File:Wikipediholic_mug.jpg originally created by User:Ritchie333 of the English Wikipedia and released under the Creative Commons Attribution-Share Alike 3.0 Unported license. The orinial image has been modified to remove the background, and compressed to reduce the file size.

@@ -10,3 +10,6 @@
 [submodule "Checklist-Maker"]
 	path = Checklist-Maker
 	url = https://github.com/DiriectorDoc/Checklist-Maker
+[submodule "Doc-s-Wikipediholism-test"]
+	path = Doc-s-Wikipediholism-test
+	url = https://github.com/DiriectorDoc/Doc-s-Wikipediholism-test

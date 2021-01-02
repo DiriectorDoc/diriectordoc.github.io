@@ -66,7 +66,7 @@ body {
 #sidebar {
 	width: calc(23.606797749979% - 2em);
 	border: 1px solid grey;
-	display:inline-block;
+	display: inline-block;
 	vertical-align: top;
 	margin: calc(1em - 2px);
 	margin-right: 0;
