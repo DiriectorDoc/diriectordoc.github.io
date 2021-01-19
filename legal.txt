@@ -23,4 +23,6 @@ by-sa.png is considered Public Domain for numerous reasons:
 Although it is free of copyright restrictions, this image may still be subject to other restrictions.
 
 ~Wikipedia Mug~
-This images of a modified version of File:Wikipediholic_mug.jpg originally created by User:Ritchie333 of the English Wikipedia and released under the Creative Commons Attribution-Share Alike 3.0 Unported license. The orinial image has been modified to remove the background, and compressed to reduce the file size.
+This images is a modified version of File:Wikipediholic_mug.jpg originally created by User:Ritchie333 of the English Wikipedia and released under the Creative Commons Attribution-Share Alike 3.0 Unported license. Changes made to the original include converting the .jpg into a .png, isolating the mug from the background, and compressing the file.
+
+Original file and license can be fround here: https://commons.wikimedia.org/wiki/File:Wikipediholic_mug.jpg
