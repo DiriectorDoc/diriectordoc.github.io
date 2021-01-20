@@ -96,5 +96,5 @@ body {
 	margin-right: 0;
 	padding: 0 .5em;
 	vertical-align: top;
-	width: calc(23.606797749979%-2em);
+	width: calc(23.606797749979% - 2em);
 }
