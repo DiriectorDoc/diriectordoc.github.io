@@ -42,15 +42,15 @@
 						</div>
 					`),
 					projectsTab = $('.nav-item[pannel="projects"]'),
-					sammple = $('.nav-item[pannel="lipsum"]');
-				let extraParams = {
-					271170024: {
-						blacklist: 1
-					},
-					267769036: {
-						blacklist: 1
-					}
-				};
+					sammple = $('.nav-item[pannel="lipsum"]'),
+					extraParams = {
+						271170024: {
+							blacklist: 1
+						},
+						267769036: {
+							blacklist: 1
+						}
+					};
 				$(".footer img").attr("src", "by-sa.png")
 				function portClick() {
 					$(".active").removeClass("active")
@@ -67,7 +67,7 @@
 					sammple.click(portClick);
 				}
 				sammple.click(portClick)
-				
+
 				for(let e of await $.getJSON("https://api.github.com/users/diriectordoc/repos")){
 					if(!extraParams[e.id] || !extraParams[e.id].blacklist){
 						let name = e.name.replaceAll("-", " ");
