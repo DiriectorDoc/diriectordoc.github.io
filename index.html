@@ -41,6 +41,26 @@
 							</a>
 						</div>
 					`),
+					portfolio = $(`
+						<div id="portfolio" class="list">
+							<p>Greetings, potential employers! Thank you for your consideration.</p>
+							<h2>Justin Davis</h2>
+							<i>Computer Enthusiest</i>
+							<h3>Experience</h3>
+							<p>JavaScript is my language of choice. Every day, I learn something new.</p>
+							<ul>
+								<li>Practicing JavaScript for 5+ years</li>
+								<li>Familiar with HTML5 webpages and Node.js applications</li>
+								<li>Dabbled in Python, C++, and Java</li>
+								<li>Exceptional math skills</li>
+								<li>Specialize in creating games</li>
+							</ul>
+							<h3>Personal</h3>
+							<ul>
+								<li>Location: Ontario, Canada; Eastern Time Zone</li>
+							</ul>
+						</div>
+					`),
 					projectsTab = $('.nav-item[pannel="projects"]'),
 					sammple = $('.nav-item[pannel="lipsum"]'),
 					extraParams = {
@@ -52,21 +72,38 @@
 						}
 					};
 				$(".footer img").attr("src", "by-sa.png")
-				function portClick() {
-					$(".active").removeClass("active")
-					projectList.remove()
-					$("#main").append(repoList)
-					sammple.addClass("active").off("click")
-					projectsTab.click(projectsTabClick);
+
+				$('[pannel="projects"]').click(function(){
+					let tab = $(this);
+					if(!tab.hasClass("active")){
+						$(".active").removeClass("active")
+						$("#repos,#portfolio").remove()
+						$("#main").append(projectList)
+						tab.addClass("active")
+					}
+				})
+				$('[pannel="repos"]').click(function(){
+					let tab = $(this);
+					if(!tab.hasClass("active")){
+						$(".active").removeClass("active")
+						$("#projects,#portfolio").remove()
+						$("#main").append(repoList)
+						tab.addClass("active")
+					}
+				})
+				$('[pannel="portfolio"]').click(function(){
+					let tab = $(this);
+					if(!tab.hasClass("active")){
+						$(".active").removeClass("active")
+						$("#projects,#repos").remove()
+						$("#main").append(portfolio)
+						tab.addClass("active")
+					}
+				})
+
+				if(window.location.hash = "#portfolio"){
+					$('[pannel="portfolio"]').click()
 				}
-				function projectsTabClick(){
-					$(".active").removeClass("active")
-					repoList.remove()
-					$("#main").append(projectList)
-					projectsTab.addClass("active").off("click")
-					sammple.click(portClick);
-				}
-				sammple.click(portClick)
 
 				for(let e of await $.getJSON("https://api.github.com/users/diriectordoc/repos")){
 					if(!extraParams[e.id] || !extraParams[e.id].blacklist){
@@ -91,10 +128,10 @@
 			<div id="main">
 				<div id="nav">
 					<div class="nav-item first active" pannel="projects"><div>Projects</div></div><!--
-				 --><div class="nav-item" pannel="lipsum"><div>Repos</div></div><!--
+				 --><div class="nav-item" pannel="repos"><div>Repos</div></div><!--
+				 --><div class="nav-item" pannel="portfolio"><div>Portfolio</div></div><!--
 				 --><a href="/legal.html"><div class="nav-item" pannel="legal"><div>Copyright</div></div></a><!--
-				 --><div class="nav-item"><div>Sample</div></div><!--
-				 --><div class="nav-item"  pannel="git"><div><a class="github" href="https://github.com/DiriectorDoc/diriectordoc.github.io"></a></div></div>
+				 --><div class="nav-item" pannel="git"><div><a class="github" href="https://github.com/DiriectorDoc/diriectordoc.github.io"></a></div></div>
 				</div>
 				<div id="projects" class="list">
 					<a href="./Checklist-Maker">

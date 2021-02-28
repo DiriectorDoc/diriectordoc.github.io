@@ -108,3 +108,6 @@ body {
 	vertical-align: top;
 	width: calc(23.606797749979% - 2em);
 }
+#portfolio{
+	padding: .75em;
+}
