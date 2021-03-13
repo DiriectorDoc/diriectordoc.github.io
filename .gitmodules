@@ -13,3 +13,9 @@
 [submodule "Doc-s-Wikipediholism-test"]
 	path = Doc-s-Wikipediholism-test
 	url = https://github.com/DiriectorDoc/Doc-s-Wikipediholism-test
+[submodule "jQlipboard-Docs"]
+	path = jQlipboard-Docs
+	url = https://github.com/DiriectorDoc/jQlipboard-Docs
+[submodule "Doc-Bot-Docs"]
+	path = Doc-Bot-Docs
+	url = https://github.com/DiriectorDoc/Doc-Bot-Docs

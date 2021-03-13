@@ -14,11 +14,11 @@
 		<script>
 			$(async function(){
 				let projectList = $("#projects"),
-					repoList = $(`
-						<div id="repos" class="list">
-							<a href="https://github.com/DiriectorDoc/jQlipboard">
+					docList = $(`
+						<div id="docs" class="list">
+							<a href="https://diriectordoc.github.io/jQlipboard-Docs/">
 								<div class="list-element">
-									<div class="preview">
+									<div class="preview centre-fix">
 										<img src="img/Example-jQlipboard.png" alt="preview" />
 									</div>
 									<div class="caption">
@@ -28,9 +28,9 @@
 								</div>
 							</a>
 							<br />
-							<a href="https://github.com/DiriectorDoc/Doc-Bot">
+							<a href="https://diriectordoc.github.io/Doc-Bot-Docs/">
 								<div class="list-element odd">
-									<div class="preview">
+									<div class="preview centre-fix">
 										<img src="img/Example-DocBot.png" alt="preview" />
 									</div>
 									<div class="caption">
@@ -77,17 +77,17 @@
 					let tab = $(this);
 					if(!tab.hasClass("active")){
 						$(".active").removeClass("active")
-						$("#repos,#portfolio").remove()
+						$("#docs,#portfolio").remove()
 						$("#main").append(projectList)
 						tab.addClass("active")
 					}
 				})
-				$('[pannel="repos"]').click(function(){
+				$('[pannel="docs"]').click(function(){
 					let tab = $(this);
 					if(!tab.hasClass("active")){
 						$(".active").removeClass("active")
 						$("#projects,#portfolio").remove()
-						$("#main").append(repoList)
+						$("#main").append(docList)
 						tab.addClass("active")
 					}
 				})
@@ -95,7 +95,7 @@
 					let tab = $(this);
 					if(!tab.hasClass("active")){
 						$(".active").removeClass("active")
-						$("#projects,#repos").remove()
+						$("#projects,#docs").remove()
 						$("#main").append(portfolio)
 						tab.addClass("active")
 					}
@@ -128,7 +128,7 @@
 			<div id="main">
 				<div id="nav">
 					<div class="nav-item first active" pannel="projects"><div>Projects</div></div><!--
-				 --><div class="nav-item" pannel="repos"><div>Repos</div></div><!--
+				 --><div class="nav-item" pannel="docs"><div>Documentations</div></div><!--
 				 --><div class="nav-item" pannel="portfolio"><div>Portfolio</div></div><!--
 				 --><a href="/legal.html"><div class="nav-item" pannel="legal"><div>Copyright</div></div></a><!--
 				 --><div class="nav-item" pannel="git"><div><a class="github" href="https://github.com/DiriectorDoc/diriectordoc.github.io"></a></div></div>

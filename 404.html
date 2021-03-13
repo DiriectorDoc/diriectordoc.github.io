@@ -2,12 +2,13 @@
 <html lang="en">
 	<head>
 		<title>F - Diriector_Doc</title>
-		<link href="global.css" rel="stylesheet" type="text/css">
-		<link rel="icon" type="image/png" href="icon/icon-404.png">
-		<script type="text/javascript" src="https://diriectordoc.github.io/global.js"></script>
+		<link href="global.css" rel="stylesheet" type="text/css"/>
+		<link rel="icon" type="image/png" href="icon/icon-404.png"/>
+		<base href="https://diriectordoc.github.io"/>
+		<script type="text/javascript" src="global.js"></script>
 		<script type="text/javascript">
 			document.addEventListener("DOMContentLoaded", function(){
-				if(document.documentMode){
+				if(window.isIE){
 					document.getElementsByClassName("container")[0].innerHTML = "Why are you using Internet Explorer anyway? Get a better browser."
 				} else {
 					let links = [
