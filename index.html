@@ -5,7 +5,7 @@
 		<meta name="description" content="Home page">
 		<meta name="author" content="Diriector_Doc">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="last-updated" content="Sat, 10 Apr 2021 00:27 GMT">
+		<meta name="last-updated" content="Sat, 10 Apr 2021 05:02 GMT">
 		<meta name="keywords" content="diriector_doc, diriectordoc, diriector doc, home, website">
 		<meta property="og:title" content="Diriector_Doc - Home Page" />
 		<meta property="og:type" content="website" />
@@ -71,8 +71,6 @@
 							</ul>
 						</div>
 					`),
-					projectsTab = $('.nav-item[pannel="projects"]'),
-					sammple = $('.nav-item[pannel="lipsum"]'),
 					extraParams = {
 						271170024: {
 							blacklist: 1
@@ -83,7 +81,7 @@
 					};
 				$(".footer img").attr("src", "by-sa.png")
 
-				$('[pannel="projects"]').click(function(){
+				$('[panel="projects"]').click(function(){
 					let tab = $(this);
 					if(!tab.hasClass("active")){
 						$(".active").removeClass("active")
@@ -92,7 +90,7 @@
 						tab.addClass("active")
 					}
 				})
-				$('[pannel="docs"]').click(function(){
+				$('[panel="docs"]').click(function(){
 					let tab = $(this);
 					if(!tab.hasClass("active")){
 						$(".active").removeClass("active")
@@ -101,7 +99,7 @@
 						tab.addClass("active")
 					}
 				})
-				$('[pannel="portfolio"]').click(function(){
+				$('[panel="portfolio"]').click(function(){
 					let tab = $(this);
 					if(!tab.hasClass("active")){
 						$(".active").removeClass("active")
@@ -112,7 +110,7 @@
 				})
 
 				if(window.location.hash == "#portfolio"){
-					$('[pannel="portfolio"]').click()
+					$('[panel="portfolio"]').click()
 				}
 
 				for(let e of await $.getJSON("https://api.github.com/users/diriectordoc/repos")){
@@ -137,11 +135,7 @@
 			</div>
 			<div id="main">
 				<div id="nav">
-					<div class="nav-item first active" pannel="projects"><div>Projects</div></div><!--
-				 --><div class="nav-item" pannel="docs"><div>Documentations</div></div><!--
-				 --><div class="nav-item" pannel="portfolio"><div>Portfolio</div></div><!--
-				 --><a href="/legal.html"><div class="nav-item" pannel="legal"><div>Copyright</div></div></a><!--
-				 --><div class="nav-item" pannel="git"><div><a class="github" href="https://github.com/DiriectorDoc/diriectordoc.github.io"></a></div></div>
+					<div class="nav-item first active" panel="projects"><div>Projects</div></div><div class="nav-item" panel="docs"><div>Documentations</div></div><div class="nav-item" panel="portfolio"><div>Portfolio</div></div><a href="/legal.html"><div class="nav-item" panel="legal"><div>Copyright</div></div></a><div class="nav-item" panel="git"><div><a class="github" href="https://github.com/DiriectorDoc/diriectordoc.github.io"></a></div></div>
 				</div>
 				<div id="projects" class="list">
 					<a href="./Checklist-Maker">
@@ -207,7 +201,7 @@
 					<a href="https://www.npmjs.com/package/dataimageattachment">
 						<div class="list-element odd">
 							<div class="preview">
-								<img src="img/Example-DataImage-Attachment.png" alt="preview" />
+								<img src="img/Example-DataImageAttachment.png" alt="preview" />
 							</div>
 							<div class="caption">
 								DataImageAttachment

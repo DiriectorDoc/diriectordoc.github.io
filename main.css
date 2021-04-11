@@ -86,7 +86,7 @@ body {
 	border-left: 1px solid gray;
 }
 
-.nav-item[pannel="git"] {
+.nav-item[panel="git"] {
 	cursor: inherit;
 	width: 30px;
 }
