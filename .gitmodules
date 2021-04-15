@@ -19,3 +19,6 @@
 [submodule "Doc-Bot-Docs"]
 	path = Doc-Bot-Docs
 	url = https://github.com/DiriectorDoc/Doc-Bot-Docs
+[submodule "ICO-Produce"]
+	path = ICO-Produce
+	url = https://github.com/DiriectorDoc/ICO-Produce
