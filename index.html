@@ -5,7 +5,7 @@
 		<meta name="description" content="Home page">
 		<meta name="author" content="Diriector_Doc">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="last-updated" content="Sat, 24 Apr 2021 04:47 GMT">
+		<meta name="last-updated" content="Fri, 30 Apr 2021 00:54 GMT" />
 		<meta name="keywords" content="diriector_doc, diriectordoc, diriector doc, home, website">
 		<meta property="og:title" content="Diriector_Doc - Home Page" />
 		<meta property="og:type" content="website" />
@@ -51,24 +51,31 @@
 							</a>
 						</div>
 					`),
-					portfolio = $(`
-						<div id="portfolio" class="list">
-							<p>Greetings, potential employers! Thank you for your consideration.</p>
-							<h2>Justin Davis</h2>
-							<i>Computer Enthusiest</i>
-							<h3>Experience</h3>
-							<p>JavaScript is my language of choice. Every day, I learn something new.</p>
-							<ul>
-								<li>Practicing JavaScript for 5+ years</li>
-								<li>Familiar with HTML5 webpages and Node.js applications</li>
-								<li>Dabbled in Python, C++, and Java</li>
-								<li>Exceptional math skills</li>
-								<li>Specialize in creating games</li>
-							</ul>
-							<h3>Personal</h3>
-							<ul>
-								<li>Location: Ontario, Canada; Eastern Time Zone</li>
-							</ul>
+					miscList = $(`
+						<div id="miscList" class="list">
+							<a href="https://www.npmjs.com/package/dataimageattachment">
+								<div class="list-element">
+									<div class="preview">
+										<img src="img/Example-DataImageAttachment.png" alt="preview" />
+									</div>
+									<div class="caption">
+										DataImageAttachment
+										<p>A discord.js plugin that makes using data URIs much easier.</p>
+									</div>
+								</div>
+							</a>
+							<br />
+							<a href="https://github.com/DiriectorDoc/Image-Licensing">
+								<div class="list-element odd">
+									<div class="preview centre-fix">
+										<img src="img/Example-License.svg" alt="preview" />
+									</div>
+									<div class="caption">
+										Image-Licensing
+										<p>All the images I have used in my projects, availible under their respective licenses.</p>
+									</div>
+								</div>
+							</a>
 						</div>
 					`),
 					extraParams = {
@@ -79,12 +86,11 @@
 							blacklist: 1
 						}
 					};
-
 				$('[panel="projects"]').click(function(){
 					let tab = $(this);
 					if(!tab.hasClass("active")){
 						$(".active").removeClass("active")
-						$("#docs,#portfolio").remove()
+						$("#docs,#miscList").remove()
 						$("#main").append(projectList)
 						tab.addClass("active")
 					}
@@ -93,25 +99,23 @@
 					let tab = $(this);
 					if(!tab.hasClass("active")){
 						$(".active").removeClass("active")
-						$("#projects,#portfolio").remove()
+						$("#projects,#miscList").remove()
 						$("#main").append(docList)
 						tab.addClass("active")
 					}
 				})
-				$('[panel="portfolio"]').click(function(){
+				$('[panel="miscList"]').click(function(){
 					let tab = $(this);
 					if(!tab.hasClass("active")){
 						$(".active").removeClass("active")
 						$("#projects,#docs").remove()
-						$("#main").append(portfolio)
+						$("#main").append(miscList)
 						tab.addClass("active")
 					}
 				})
-
-				if(window.location.hash == "#portfolio"){
-					$('[panel="portfolio"]').click()
+				if(window.location.hash == "#miscList"){
+					$('[panel="miscList"]').click()
 				}
-
 				for(let e of await $.getJSON("https://api.github.com/users/diriectordoc/repos")){
 					if(!extraParams[e.id] || !extraParams[e.id].blacklist){
 						let name = e.name.replaceAll("-", " ");
@@ -134,7 +138,7 @@
 			</div>
 			<div id="main">
 				<div id="nav">
-					<div class="nav-item first active" panel="projects"><div>Projects</div></div><div class="nav-item" panel="docs"><div>Documentations</div></div><div class="nav-item" panel="portfolio"><div>Portfolio</div></div><a href="/legal.html"><div class="nav-item" panel="legal"><div>Copyright</div></div></a><div class="nav-item" panel="git"><div><a class="github" href="https://github.com/DiriectorDoc/diriectordoc.github.io"></a></div></div>
+					<div class="nav-item first active" panel="projects"><div>Projects</div></div><div class="nav-item" panel="docs"><div>Documentations</div></div><div class="nav-item" panel="miscList"><div>Miscellany</div></div><a href="/legal.html"><div class="nav-item" panel="legal"><div>Copyright</div></div></a><div class="nav-item" panel="git"><div><a class="github" href="https://github.com/DiriectorDoc/diriectordoc.github.io"></a></div></div>
 				</div>
 				<div id="projects" class="list">
 					<a href="./Checklist-Maker">
@@ -197,20 +201,8 @@
 						</div>
 					</a>
 					<br />
-					<a href="https://www.npmjs.com/package/dataimageattachment">
-						<div class="list-element odd">
-							<div class="preview">
-								<img src="img/Example-DataImageAttachment.png" alt="preview" />
-							</div>
-							<div class="caption">
-								DataImageAttachment
-								<p>A discord.js plugin that makes using data URIs much easier.</p>
-							</div>
-						</div>
-					</a>
-					<br />
 					<a href="./ICO-Produce">
-						<div class="list-element">
+						<div class="list-element odd">
 							<div class="preview">
 								<img src="img/Example-Produce.png" alt="preview" />
 							</div>
