@@ -22,3 +22,6 @@
 [submodule "ICO-Produce"]
 	path = ICO-Produce
 	url = https://github.com/DiriectorDoc/ICO-Produce
+[submodule "noWASM"]
+	path = noWASM
+	url = https://github.com/DiriectorDoc/noWASM
