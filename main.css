@@ -28,6 +28,9 @@ body {
 
 .container {
 	background: #eee;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	font-size: 0;
 	margin: auto;
 	max-width: 100%;
@@ -102,11 +105,16 @@ body {
 	text-align: center;
 }
 
+#footer {
+	flex: 1 1 100%;
+}
+
 #header img {
 	float: right;
 }
 
 #header {
+	flex: 1 1 100%;
 	height: 157.569876450341px;
 }
 
@@ -117,12 +125,16 @@ body {
 
 #main {
 	display: inline-block;
+	flex: 1;
 	padding: 1.6180339887499em;
-	width: calc(76.393202250021% - 3.2360679774998em);
 }
 
 #nav {
 	height: 37.1972020485237px;
+}
+
+#portfolio {
+	padding: .75em;
 }
 
 #sidebar ul {
@@ -132,13 +144,10 @@ body {
 #sidebar {
 	border: 1px solid grey;
 	display: inline-block;
-	margin: calc(1em - 2px);
-	margin-right: 0;
+	flex: 0 0 calc(23.606797749979% - 2em);
+	height: fit-content;
+	margin-left: calc(1em - 2px);
+	margin-top: 1.6180339887499em;
 	padding: 0 .5em;
 	vertical-align: top;
-	width: calc(23.606797749979% - 2em);
-}
-
-#portfolio {
-	padding: .75em;
 }
