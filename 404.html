@@ -41,13 +41,7 @@
 							["https://media.giphy.com/media/xUNd9IchxKZadO3XMc/giphy.gif", "https://giphy.com/gifs/thegoldbergs-season-5-episode-4-xUNd9IchxKZadO3XMc", 480, 480]
 						],
 						img = document.getElementsByTagName("img")[0],
-						first = links.shift();
-					links.push(first)
-					while (links[0][0] != first[0])
-						links.splice(links.length*Math.random()|0, 0, links.shift());
-					links.splice(links.length*Math.random()|0, 0, links.shift())
-			
-					let image = links.pop();
+						image = links[links.length*Math.random()|0];
 			
 					img.setAttribute("src", image[0])
 					img.setAttribute("width", image[2])
