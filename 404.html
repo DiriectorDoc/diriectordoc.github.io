@@ -7,6 +7,9 @@
 		<link rel="icon" type="image/png" href="icon/icon-404.png"/>
 		<script type="text/javascript" src="global.js"></script>
 		<script type="text/javascript">
+			if(/https:\/\/diriectordoc.github.io\/jqlipboard\/?/i.test(window.location.href)){
+				window.location.replace("https://diriectordoc.github.io/jQlipboard/")
+			}
 			document.addEventListener("DOMContentLoaded", function(){
 				if(window.isIE){
 					document.getElementsByClassName("container")[0].innerHTML = "Why are you using Internet Explorer anyway? Get a better browser."
