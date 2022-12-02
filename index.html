@@ -5,8 +5,8 @@
 		<meta name="description" content="Home page">
 		<meta name="author" content="Diriector_Doc">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="last-updated" content="Fri, 30 Apr 2021 00:54 GMT" />
-		<meta name="keywords" content="diriector_doc, diriectordoc, diriector doc, home, website">
+		<meta name="last-updated" content="Fri, 02 Dec 2022 07:33 GMT" />
+		<meta name="keywords" content="diriector_doc, diriectordoc, diriector doc, home, website, portfolio, contact">
 		<meta property="og:title" content="Diriector_Doc - Home Page" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://diriectordoc.github.io/" />
@@ -17,208 +17,242 @@
 		<meta property="og:description" content="The home page for Diriector_Doc's creations." />
 		<meta property="og:locale" content="en_CA" />
 		<meta property="og:site_name" content="Diriector_Doc Pages" />
-		<link href="global.css" rel="stylesheet" type="text/css">
 		<link href="main.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" src="global.js"></script>
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-		<script>
-			$(async function(){
-				let projectList = $("#projects"),
-					docList = $(`
-						<div id="docs" class="list">
-							<a href="https://diriectordoc.github.io/jQlipboard/">
-								<div class="list-element">
-									<div class="preview centre-fix">
-										<img src="img/Example-jQlipboard.png" alt="preview" />
-									</div>
-									<div class="caption">
-										jQlipboard
-										<p>A jQuery plugin used for handling clipboard opperations.</p>
-									</div>
-								</div>
-							</a>
-							<br />
-							<a href="https://diriectordoc.github.io/Doc-Bot-Docs/">
-								<div class="list-element odd">
-									<div class="preview centre-fix">
-										<img src="img/Example-DocBot.png" alt="preview" />
-									</div>
-									<div class="caption">
-										Doc Bot
-										<p>A Discord bot made specifically for my Discord Channel.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					`),
-					miscList = $(`
-						<div id="miscList" class="list">
-							<a href="https://www.npmjs.com/package/dataimageattachment">
-								<div class="list-element">
-									<div class="preview">
-										<img src="img/Example-DataImageAttachment.png" alt="preview" />
-									</div>
-									<div class="caption">
-										DataImageAttachment
-										<p>A discord.js plugin that makes using data URIs much easier.</p>
-									</div>
-								</div>
-							</a>
-							<br />
-							<a href="https://github.com/DiriectorDoc/Image-Licensing">
-								<div class="list-element odd">
-									<div class="preview centre-fix">
-										<img src="img/Example-License.svg" alt="preview" />
-									</div>
-									<div class="caption">
-										Image-Licensing
-										<p>All the images I have used in my projects, availible under their respective licenses.</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					`),
-					extraParams = {
-						271170024: {
-							blacklist: 1
-						},
-						267769036: {
-							blacklist: 1
-						},
-						365114696: {
-							blacklist: 1
-						}
-					};
-				$('[panel="projects"]').click(function(){
-					let tab = $(this);
-					if(!tab.hasClass("active")){
-						$(".active").removeClass("active")
-						$("#docs,#miscList").remove()
-						$("#main").append(projectList)
-						tab.addClass("active")
-					}
+		<script type="text/javascript" src="Custom-JSX/jsx.js"></script>
+		<script type="text/javascript">
+			const animations = jsx`<div id="section">
+				<div style="text-align: center;font-size: .75rem;">
+					All of the following animations were created in JavaScript, and rendered using HTML Canvas (or the canvas package for Node.js) and FFmpeg. I made no use of third-party rendering tools, advanced editing software, graphics packages, or pre-rendered video assets. These animations were created entirely by me, using only JS-defined drawing methods, assets designed by me, and the occasional licensed asset from Wikimedia Commons.
+				</div>
+				<hr />
+				<div class="item">
+					<div class="tile">
+						<video autoplay muted loop class="example-item">
+							<source src="video/mondrian.webm">
+						</video>
+					</div>
+					<div class="vr"></div>
+					<div class="text">
+						<h3>Mondrian Rectangles</h3>
+						<p class="date">Created <time datetime="2022-11-01T19:46:31.000Z">Nov 1</time></p>
+						<p>This is an abstract animation, created in the style of the famous Compositions of Piet Mondrian. I wanted to take the work of a historical painter and adapt it to my animation style.</p>
+						<p class="link"><a href="https://www.youtube.com/watch?v=mLkgeaXblCk">View 4k version</a></p>
+					</div>
+				</div>
+				<hr class="clear" />
+				<div class="item right">
+					<div class="tile">
+						<video autoplay muted loop class="example-item">
+							<source src="video/solar.webm">
+						</video>
+					</div>
+					<div class="vr"></div>
+					<div class="text">
+						<h3>Solar System</h3>
+						<p class="date">Created <time datetime="2022-10-29T20:56:00.000Z">Oct 29</time></p>
+						<p>If it isn't obvious by now, I'm a bit of a nerd. This animation combines my partial interest in space with the inspiration to create a looping animation with a lot of moving components.</p>
+						<p class="link"><a href="https://www.youtube.com/watch?v=ZdMZCmV9658">View 4k version</a></p>
+					</div>
+				</div>
+				<hr class="clear" />
+				<div class="item">
+					<div class="tile">
+						<video autoplay muted loop class="example-item">
+							<source src="video/earth.webm">
+						</video>
+					</div>
+					<div class="vr"></div>
+					<div class="text">
+						<h3>Blue Marble</h3>
+						<p class="date">Created <time datetime="2022-11-16T14:15:42.000Z">Nov 16</time></p>
+						<p>For this animation, I wanted to try my hand at mapping a 2D image onto a sphere. I thought, what better way to do that than to create an animation of Earth? I used my knowledge of math functions to distort a flat image in the right way to make it looks like a rotating sphere.</p>
+						<p class="link"><a href="https://www.youtube.com/watch?v=sB1VV0w8Rs8">View 4k version</a></p>
+					</div>
+				</div>
+				<hr class="clear" />
+				<div class="item right">
+					<div class="tile">
+						<video autoplay muted loop class="example-item">
+							<source src="video/hue wheel.webm">
+						</video>
+					</div>
+					<div class="vr"></div>
+					<div class="text">
+						<h3>Hue Wheel</h3>
+						<p class="date">Created <time datetime="2022-10-20T19:28:12.000Z">Oct 20</time></p>
+						<p>This is my most viewed animation on YouTube. It was also one of the easiest (yet time-consuming) of my work. My goal was to make a colourful and elegant loop, and I feel this accomplishes that nicely.</p>
+						<p class="link"><a href="https://www.youtube.com/watch?v=14N5zGeq7oU">View 4k version</a></p>
+					</div>
+				</div>
+			</div>`,
+			bio = jsx`<div id="section" class="grid">
+				<div class="specialties">
+					<h3>Specialties</h3>
+					<ul>
+						<li>JavaScript</li>
+						<li>TypeScript</li>
+						<li>HTML</li>
+						<li>Node.js</li>
+						<li>Can learn new languages with ease</li>
+					</ul>
+				</div>
+				<div class="strong">
+					<h3>Strong Understanding</h3>
+					<ul>
+						<li>CSS & SCSS</li>
+						<li>Dart</li>
+						<li>Python</li>
+						<li>Java</li>
+						<li>C#/C++</li>
+						<li>Unity</li>
+					</ul>
+				</div>
+				<div class="interests">
+					<h3>Interests</h3>
+					<ul>
+						<li>WebAssembly</li>
+						<li>Google Carbon</li>
+						<li>BeefLang</li>
+						<li>Compression Algorithms</li>
+						<li>Animations</li>
+					</ul>
+				</div>
+				<div class="wont">
+					<h3>Will not</h3>
+					<ul>
+						<li>Help you set up a printer</li>
+						<li>Fix your Cable TV</li>
+						<li>Teach you how to use a smartphone</li>
+					</ul>
+				</div>
+				<div class="line"><div></div></div>
+			</div>`,
+			games = jsx`<div id="section">
+				<div class="item">
+					<div class="tile">
+						<img src="img/Example-16.png" alt="screenshot from 16 Rooms" class="example-item">
+					</div>
+					<div class="vr"></div>
+					<div class="text">
+						<h3>16 Rooms</h3>
+						<p class="date">Created <time datetime="1970-01-01T00:00:00.000Z">TBA</time></p>
+						<p>16 Rooms is an ongoing project. This was one of my first "massive" undertaking of a project. I created this game in TypeScript. And it was during the creation process of this game that I discovered that my favourite thing about game design is putting ideas into code.</p>
+					</div>
+				</div>
+				<hr class="clear" />
+				<div class="item right">
+					<div class="tile">
+						<img src="img/Example-Simon.png" alt="example of Simon project" class="example-item centre">
+					</div>
+					<div class="vr"></div>
+					<div class="text">
+						<h3>Simon</h3>
+						<p class="date">Created <time datetime="2016-01-01T05:00:00.000Z">Sometime in 2016</time></p>
+						<p>This is one of the very first projects I undertook. When I was 14 years old, I created a working model of the famous memory game, Simon, using JavaScript. Later, in 2019, i took the original project (which can be seen in the initial commit on GitHub) and revanped it and uploaded it to the web for anyone to view and play.</p>
+						<p class="link"><a href="./Simon/">Play the game here.</a></p>
+					</div>
+				</div>
+				<hr class="clear" />
+				<div class="item">
+					<div class="tile">
+						<img src="img/Example-Pterry.png" alt="screenshot from Pterry" class="example-item">
+					</div>
+					<div class="vr"></div>
+					<div class="text">
+						<h3>Pterry</h3>
+						<p class="date">Created <time datetime="2022-11-30T22:45:07.653Z">Nov 30</time></p>
+						<p>Pterry is a 2D platformer-esque game made in Unity. I worked in a team of three, and I was the designated programmer. This game was inspired by Greek mythology and the tale of icarus. The gameplay is exemplaray of the phrase "Don't fly too close to the sun."</p>
+					</div>
+				</div>
+			</div>`,
+			contact = jsx`<div id="section" class="contact">
+				<div class="left part">
+					<div class="discord"><img src="img/Icon-Clyde.svg" /></div>
+					<div class="twitter"><img src="img/Icon-Twitter.svg" /></div>
+					<div class="email"><img src="img/Icon-Mail.svg" /></div>
+				</div>
+				<div class="right part">
+					<div class="discord"><a href="https://discord.com/users/267796106828578816" class="no-underline">Diriector_Doc#9340</a></div>
+					<div class="twitter"><a href="https://twitter.com/Diriector_Doc" class="no-underline">@Diriector_Doc</a></div>
+					<div class="email"><a href="mailto:example@example.com">example@example.com</a></div>
+				</div>
+			</div>`;
+
+			function switchTo(tab){
+				requestAnimationFrame(() => {
+					document.getElementById("section").remove()
+					document.getElementById("container").append(tab)
 				})
-				$('[panel="docs"]').click(function(){
-					let tab = $(this);
-					if(!tab.hasClass("active")){
-						$(".active").removeClass("active")
-						$("#projects,#miscList").remove()
-						$("#main").append(docList)
-						tab.addClass("active")
-					}
+				requestAnimationFrame(() => {
+					tab.querySelectorAll("video").forEach(element => {
+						element.play()
+					});
 				})
-				$('[panel="miscList"]').click(function(){
-					let tab = $(this);
-					if(!tab.hasClass("active")){
-						$(".active").removeClass("active")
-						$("#projects,#docs").remove()
-						$("#main").append(miscList)
-						tab.addClass("active")
-					}
-				})
-				if(window.location.hash == "#miscList"){
-					$('[panel="miscList"]').click()
-				}
-				for(let e of await $.getJSON("https://api.github.com/users/diriectordoc/repos")){
-					if(!extraParams[e.id] || !extraParams[e.id].blacklist){
-						let name = e.name.replaceAll("-", " ");
-						$("#sidebar ul").append(`<li><a href="${e.html_url}" title="${name}">${name}</a></li>`)
-					}
-				}
-				$("#sidebar h4").html("Repositories")
-			})
+				document.querySelectorAll(".active").forEach(element => {
+						element.classList.remove("active")
+				});
+			}
 		</script>
 	</head>
 	<body>
-		<div class="container">
-			<div id="header">
-				<img src="img/header_image.png" alt="Diriectir_Doc"/>
-				<h1>Diriector_Doc</h1>
+		<video autoplay muted loop class="background-video">
+			<source src="video/pixamage.webm">
+		</video>
+		<div id="container">
+			<div class="profile">
+				<img src="img/header_image.png" />
 			</div>
-			<div id="sidebar">
-				<h4>Loading...</h4>
-				<ul></ul>
+			<div class="centre" style="margin-top:16px;"><span>Online, I go by</span></div>
+			<h2 class="centre" id="title">Doc</h2>
+			<h3 class="centre">Gamer<br />Programmer<br />Cool dude</h3>
+			<div class="navigator">
+				<div class="tab active" onclick="switchTo(bio); this.classList.add('active')"><span>Home</span></div>
+				<div class="tab" onclick="switchTo(games); this.classList.add('active')"><span>Games</span></div>
+				<div class="tab" onclick="switchTo(animations); this.classList.add('active')"><span>Animations</span></div>
+				<div class="tab" onclick="switchTo(contact); this.classList.add('active')"><span>Contact</span></div>
 			</div>
-			<div id="main">
-				<div id="nav">
-					<div class="nav-item first active" panel="projects"><div>Projects</div></div><div class="nav-item" panel="docs"><div>Documentations</div></div><div class="nav-item" panel="miscList"><div>Miscellany</div></div><a href="/legal.html"><div class="nav-item" panel="legal"><div>Copyright</div></div></a><div class="nav-item" panel="git"><div><a class="github" href="https://github.com/DiriectorDoc/diriectordoc.github.io"></a></div></div>
+			<hr />
+			<div id="section" class="grid">
+				<div class="specialties">
+					<h3>Specialties</h3>
+					<ul>
+						<li>JavaScript</li>
+						<li>TypeScript</li>
+						<li>HTML</li>
+						<li>Node.js</li>
+						<li>Can learn new languages with ease</li>
+					</ul>
 				</div>
-				<div id="projects" class="list">
-					<a href="./Checklist-Maker">
-						<div class="list-element">
-							<div class="preview">
-								<img src="img/Example-Checklist.png" alt="preview" />
-							</div>
-							<div class="caption">
-								Checklist Maker
-								<p>Use for creating and managing checklists. Order and change them to your liking. See your progress bar for each list.</p>
-							</div>
-						</div>
-					</a>
-					<br />
-					<a href="./Simon">
-						<div class="list-element odd">
-							<div class="preview">
-								<img src="img/Example-Simon.png" alt="preview" />
-							</div>
-							<div class="caption">
-								Simon
-								<p>The game of <i>Simon</i> created in HTML.</p>
-							</div>
-						</div>
-					</a>
-					<br />
-					<a href="./All-Purpose-Counter">
-						<div class="list-element">
-							<div class="preview">
-								<img src="img/Example-Counter.png" alt="preview" />
-							</div>
-							<div class="caption">
-								All Purpose Counter
-								<p>A number incrementer or tally counter. Click the screen or type on your keypbeard to in crease the number.</p>
-							</div>
-						</div>
-					</a>
-					<br />
-					<a href="./DVD">
-						<div class="list-element odd">
-							<div class="preview">
-								<img src="img/Example-DVD.png" alt="preview" />
-							</div>
-							<div class="caption">
-								DVD
-								<p>The DVD logo bouncing around the screen. Will it ever hit the corner? Stay tuned to find out.</p>
-							</div>
-						</div>
-					</a>
-					<br />
-					<a href="./Doc-s-Wikipediholism-test">
-						<div class="list-element">
-							<div class="preview">
-								<img src="img/Example-CRAZYTEST.png" alt="preview" />
-							</div>
-							<div class="caption">
-								Wikipediholism Test
-								<p>An automation version of Wikipedia's Wikipediholism Test. Always up to date.</p>
-							</div>
-						</div>
-					</a>
-					<br />
-					<a href="./ICO-Produce">
-						<div class="list-element odd">
-							<div class="preview">
-								<img src="img/Example-Produce.png" alt="preview" />
-							</div>
-							<div class="caption">
-								ICO Produce
-								<p>A web app for creating multi-resolution icon files.</p>
-							</div>
-						</div>
-					</a>
+				<div class="strong">
+					<h3>Strong Understanding</h3>
+					<ul>
+						<li>CSS & SCSS</li>
+						<li>Dart</li>
+						<li>Python</li>
+						<li>Java</li>
+						<li>C#/C++</li>
+						<li>Unity</li>
+					</ul>
 				</div>
-			</div>
-			<div id="footer">
-				<div class="license"></div>
+				<div class="interests">
+					<h3>Interests</h3>
+					<ul>
+						<li>WebAssembly</li>
+						<li>Google Carbon</li>
+						<li>BeefLang</li>
+						<li>Compression Algorithms</li>
+						<li>Animations</li>
+					</ul>
+				</div>
+				<div class="wont">
+					<h3>Will not</h3>
+					<ul>
+						<li>Help you set up a printer</li>
+						<li>Fix your Cable TV</li>
+						<li>Teach you how to use a smartphone</li>
+					</ul>
+				</div>
+				<div class="line"><div></div></div>
 			</div>
 		</div>
 	</body>

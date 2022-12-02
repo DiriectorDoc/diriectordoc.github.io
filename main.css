@@ -1,153 +1,222 @@
 body {
-	background: black;
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 8px 0;
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
-.caption p {
-	color: initial;
+#title {
+  font-size: 2.5rem;
+  margin: 12px 0;
 }
 
-.caption {
-	float: right;
-	text-align: right;
-	width: 50%;
+.date time {
+  font-style: italic;
 }
 
-.centre-fix {
-	margin: 0;
-	position: relative;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+#container {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-weight: lighter;
+  margin: 10vh 10vh 0 10vh;
+  min-height: 90vh;
+  padding: 20px;
+}
+#container h2, #container h3 {
+  font-weight: lighter;
+  margin: 0;
 }
 
-.container > div {
-	font-size: 1rem;
+.contact {
+  font-size: 20px;
+  width: 20rem;
+  max-width: 100%;
+  margin: 1rem auto;
+  gap: 5px;
+  align-content: stretch;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.contact .left {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  text-align: center;
+}
+.contact .right {
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+}
+.contact .part {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1.5em 1.5em 1.5em;
+  gap: 0px 0px;
+  grid-template-areas: "discord" "twitter" "email";
+}
+.contact .part .discord {
+  grid-area: discord;
+}
+.contact .part .twitter {
+  grid-area: twitter;
+}
+.contact .part .email {
+  grid-area: email;
+}
+.contact img {
+  height: 1.5rem;
 }
 
-.container {
-	background: #eee;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	font-size: 0;
-	margin: auto;
-	max-width: 100%;
-	min-height: 100%;
-	width: 1080px;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2em 1fr;
+  gap: 1em 0px;
+  grid-template-areas: "specialties line strong" "interests line wont";
+}
+.grid .specialties {
+  grid-area: specialties;
+}
+.grid .strong {
+  grid-area: strong;
+}
+.grid .interests {
+  grid-area: interests;
+}
+.grid .wont {
+  grid-area: wont;
+}
+.grid .line {
+  grid-area: line;
+}
+.grid .line div {
+  width: 0;
+  margin: 0 auto;
+  height: 100%;
+  border: 1px dashed white;
 }
 
-.list {
-	border: 1px solid grey;
-	border-top: 0;
-	padding: .5em 0;
+.navigator {
+  align-content: stretch;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.navigator .tab {
+  align-self: auto;
+  flex: 0 1 25%;
+  text-align: center;
+  border-color: white;
+  border-width: 0 1px;
+  border-style: solid;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.navigator .tab.active span {
+  padding: 3px;
+  background-color: rgba(255, 0, 255, 0.3);
+  border-radius: 5px;
 }
 
-.list-element {
-	background: #E4E4E4;
-	border: 1px solid grey;
-	border-radius: 1em;
-	display: inline-block;
-	height: 125px;
-	margin: .5em 1em;
-	padding: .7071067811865em;
-	width: calc(100% - 3.414213562373em - 2px);
+.item {
+  align-content: stretch;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.item .tile {
+  order: 1;
+  flex: 0 0.2 45%;
+  align-self: auto;
+}
+.item .tile img.centre {
+  display: block;
+  margin: 0 auto;
+}
+.item .vr {
+  align-self: stretch;
+  background: white;
+  flex: 0 1 2px;
+  margin: 0 16px;
+  order: 2;
+}
+.item .text {
+  align-self: auto;
+  flex: 1 1 auto;
+  order: 3;
+}
+.item .text h3 {
+  text-decoration: underline;
+}
+.item .link {
+  font-style: italic;
+}
+.item.right {
+  text-align: right;
+}
+.item.right .tile {
+  order: 3;
+}
+.item.right .text {
+  order: 1;
 }
 
-.list-element.odd {
-	background: #D0D0D0
+.no-underline {
+  text-decoration: none;
 }
 
-.list-element:hover {
-	background: #bbb;
+a:link {
+  color: hwb(240 40% 0%);
 }
 
-.nav-item div {
-	margin-top: 10px;
+a:visited {
+  color: hwb(270 35% 0%);
 }
 
-.nav-item {
-	background: #bbb;
-	border: 1px solid gray;
-	border-left: 0;
-	border-radius: 8px 8px 0 0;
-	cursor: pointer;
-	display: inline-block;
-	height: 100%;
-	text-align: center;
-	vertical-align: top;
-	width: calc((100%-30px)/4 - 9px);
+a:active {
+  color: hwb(0 35% 0%);
 }
 
-.nav-item.active {
-	background: inherit;
-	border-bottom: 0;
+.background-video {
+  left: 0;
+  min-width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: -1;
 }
 
-.nav-item.first {
-	border-left: 1px solid gray;
+.example-item {
+  max-height: 360px;
+  max-width: 100%;
 }
 
-.nav-item[panel="git"] {
-	cursor: inherit;
-	width: 30px;
+.profile {
+  aspect-ratio: 1/1;
+  background: hwb(300deg 40% 0%);
+  height: 150px;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+.profile img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
-.preview img {
-	max-height: 125px;
-	max-width: 100%;
+.centre {
+  text-align: center;
 }
 
-.preview {
-	float: left;
-	width: 50%;
-	text-align: center;
+.clear {
+  clear: both;
 }
 
-#footer {
-	flex: 1 1 100%;
-}
-
-#header img {
-	float: right;
-}
-
-#header {
-	flex: 1 1 100%;
-	height: 157.569876450341px;
-}
-
-#lorem-ipsum {
-	padding-left: 1em;
-	padding-right: 1em;
-}
-
-#main {
-	display: inline-block;
-	flex: 1;
-	padding: 1.6180339887499em;
-}
-
-#nav {
-	height: 37.1972020485237px;
-}
-
-#portfolio {
-	padding: .75em;
-}
-
-#sidebar ul {
-	word-wrap: break-word;
-}
-
-#sidebar {
-	border: 1px solid grey;
-	display: inline-block;
-	flex: 0 0 calc(23.606797749979% - 2em);
-	height: fit-content;
-	margin-left: calc(1em - 2px);
-	margin-top: 1.6180339887499em;
-	padding: 0 .5em;
-	vertical-align: top;
-}
+/*# sourceMappingURL=main.css.map */
